@@ -8,4 +8,5 @@ fs.writeFile(path, text, err => {
   if (err) {
     console.error(err);
   }
-});
+}
+);
