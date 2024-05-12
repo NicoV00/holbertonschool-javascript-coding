@@ -11,4 +11,3 @@ request.get(url, (err, res, body) => {
 
   console.log(`${JSON.parse(body),title}`);
 });
- 
