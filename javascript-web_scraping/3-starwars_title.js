@@ -1,9 +1,9 @@
 #!/usr/bin/node
 
 const request = require('request');
-const url = `https://swapi-api.hbtn.io/api/films/&{process.argv[2]}`;
+const url = `https://swapi-api.hbtn.io/api/films/${process.argv[2]}`;
 
-request.get(url, (err, res, body) => {
+request.get(url, (err, response, body) => {
   if (err) {
     console.error(err);
     return;
