@@ -10,11 +10,9 @@ request(url, (err, res, body) => {
     console.error(err);
     return;
   }
-
   fs.writeFile(path, body, err => {
   if (err) {
     console.error(err);
-    return;
   }
  });
 });
