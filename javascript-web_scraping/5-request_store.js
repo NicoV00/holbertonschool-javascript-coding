@@ -11,8 +11,8 @@ request(url, (err, res, body) => {
     return;
   }
   fs.writeFile(path, body, err => {
-  if (err) {
-    console.error(err);
-  }
- });
+    if (err) {
+      console.error(err);
+    }
+  });
 });
